@@ -1,0 +1,56 @@
+-- Select all columns from the Customers table.
+SELECT * FROM Customers;
+
+-- Select only the CustomerName column from Customers.
+SELECT CustomerName FROM Customers;
+
+-- Select distinct Country from the Customers table.
+SELECT DISTINCT Country FROM Customers;
+
+-- Select the City column from the Customers table.
+SELECT City FROM Customers;
+
+-- Select all Products where the Price is greater than 50.
+SELECT * FROM Products WHERE Price > 50;
+
+-- Select all Orders where the OrderID is exactly 10248.
+SELECT * FROM Orders WHERE OrderID = 10248;
+
+-- Select all Customers who live in 'Germany'.
+SELECT * FROM Customers WHERE Country = 'Germany';
+
+-- Select all Products where the CategoryID is 1.
+SELECT * FROM Products WHERE CategoryID = 1;
+
+-- Select the top 5 Customers.
+SELECT TOP 5 * FROM Customers;
+
+-- Select the first 10 Products.
+SELECT TOP 10 * FROM Products;
+
+-- Select unique Cities from the Customers table.
+SELECT DISTINCT City FROM Customers;
+
+-- Select all Orders where the ShipperName is 'United Package'.
+SELECT * FROM Shippers where ShipperName='United Package';
+
+-- Select all Customers whose CustomerName starts with the letter 'A'.
+SELECt * from Customers where CustomerName like 'A%';
+
+-- Select all Products with a price between 10 and 20.
+select * from Products where Price between 10 and 20;
+
+-- Select all Orders where the OrderDate is NULL.
+SELECT * FROM Orders WHERE OrderDate IS NULL;
+
+-- Select all Employees whose LastName is 'Davolio'.
+SELECT * FROM Employees where LastName='Davolio';
+
+-- Select all Products that are NOT in category 2.
+SELECT * FROM Products WHERE CategoryID !=2;
+
+-- Select all Customers living in either 'Germany' or 'France'.
+SELECT * FROM Customers WHERE Country IN ('Germany', 'France');
+
+-- Select all Customers who are NOT from the 'UK'.
+SELECT * FROM Customers WHERE Country != 'UK';
